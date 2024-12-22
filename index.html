@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Tetris Game</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- GENERAL -->
+    <div class="btns">
+        <button class="btn play-button" id="start"><i class="fa fa-play"></i></button>
+        <button class="btn restart-button" id="restart"><i class="fa fa-redo-alt"></i></button>
+        <button class="btn score-container" ><span id="score">0</span></button>
+        <button class="btn level-container" ><span id="level">0</span></button>
+    </div>
+
+    <!-- CANVAS -->
+    <canvas id="canvas" width="300" height="600"></canvas>
+
+    <!-- GAME OVER -->
+    <div id="gameOver" class="hide">
+        <strong>Game Over!!</strong>
+    </div>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="./js/tetrominoes.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/main.js"></script>
+    <noscript>Your broswer does not support JavaScript!</noscript>
+
+</body>
+</html>
